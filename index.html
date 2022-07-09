@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <script src="./script.js" defer></script>
+    <title>RocketShoes</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/logo.svg"
+        alt="Marca da empresa/logo de um tênis"
+        class="logo"
+      />
+      <a href="">HOMEM</a>
+      <a href="">MULHER</a>
+      <a href="">CRIANÇA</a>
+      <a href="">CUSTOMIZAR</a>
+      <form action="">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Pesquisar"
+        />
+      </form>
+      <img
+        class="bag-menu"
+        src="./assets/icon-bag.svg"
+        alt="Sacola de Compras"
+        class="bag"
+      />
+    </header>
+    <div class="product">
+      <div class="side-left">
+        <div class="infos-asides">
+          <p class="title-product">Tênis Esportivo Para Corrida Top</p>
+          <p class="description-product">
+            Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e
+            musculoso.
+          </p>
+          <p class="price-product">R$ 1.0000,00</p>
+          <button class="button-buy">COMPRAR</button>
+        </div>
+      </div>
+      <div class="side-rigth">
+        <div class="product-images">
+          <div class="image-principal-container">
+            <img
+              alt="Clique na imagem da galeria para aumentar a foto do tênis."
+              class="image-principal"
+              id="image-principal"
+            />
+          </div>
+          <div class="gallery">
+            <img
+              onclick="mostrarImagem(this)"
+              src="./assets/tenis-1-ampliado.png"
+              alt="Imagem principal do produto, tênis"
+            />
+            <img
+              onclick="mostrarImagem(this)"
+              src="./assets/tenis-1-galeria.png"
+              alt="Imagem secundaria do produto, tênis"
+            />
+            <img
+              onclick="mostrarImagem(this)"
+              src="./assets/tenis-2-galeria.png"
+              alt="Imagem secundaria do produto, tênis"
+            />
+            <img
+              onclick="mostrarImagem(this)"
+              src="./assets/tenis-3-galeria.png"
+              alt="Imagem secundaria do produto, tênis"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="midia">
+      <img src="./assets/img-video.png" alt="Imagem de um vídeo de calçado" />
+      <a href="">FACEBOOK</a>
+      <a href="">INSTAGRAM</a>
+      <a href="">YOUTUBE</a>
+      <a href="">TWITTER</a>
+      <div class="explorer-more">
+        <a href="">EXPLORE MAIS</a>
+        <img
+          src="./assets/icon-arrow.svg"
+          alt="icone de uma seta a direita"
+          class="image-arrow"
+        />
+      </div>
+    </div>
+  </body>
+</html>

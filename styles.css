@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+@media (max-width: 800px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 3.75rem;
+    background-color: transparent;
+
+  }
+  
+  header img {
+    margin: 1rem;
+  }
+
+  header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  header form input {
+    width: 13.75rem;
+    height: 2.8125rem;
+    padding-left: 2rem;
+    border: none;
+    background-image: url(./assets/icon-search.svg);
+    background-position: 0.5rem, left;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    font-size: .7rem;
+    font-weight: normal;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-left {
+    background-color: var(--main-background);
+  }
+
+  .infos-asides {
+    width: 100vw;
+    height: 14.3125rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .title-product {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.3125rem;
+  }
+
+  .description-product {
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--text-description);
+    margin-bottom: 1.3125rem;
+  }
+
+  .price-product {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.875rem;
+  }
+
+  .button-buy {
+    width: 7.125rem;
+    height: 2.625rem;
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--button);
+    border: none;
+  }
+
+  .side-rigth{
+    background-color: var(--text-description);
+  }
+
+  .image-principal-container {
+    width: 17.625rem;
+    height: 13.625rem;
+    margin: 0 auto;
+  }
+
+  .image-principal-container img {
+    width: 100%;
+  }
+
+  .gallery {
+    display: flex;
+    width: 100vw;
+    height: 7rem;
+    overflow-x: scroll;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .gallery img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .midia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: var(--main-background);
+  }
+
+  .midia a {
+    margin: .3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .explorer-more {
+    display: flex;
+    align-items: center;
+    height: 5.375rem;
+    background-color: var(--footer);
+  }
+
+  .explorer-more a {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 801px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 3.75rem 0;
+    background-color: transparent;
+    position: absolute;
+    width: 85vw;
+  }
+
+  header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  #button-menu {
+    display: none;
+  }
+
+  header form input {
+    width: 13.75rem;
+    height: 2.8125rem;
+    padding-left: 2rem;
+    border: none;
+    background-image: url(./assets/icon-search.svg);
+    background-position: 0.5rem, left;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .product {
+    display: flex;
+  }
+
+  .side-left {
+    height: 100vh;
+    background-color: var(--background);
+  }
+
+  .side-rigth {
+    height: 100vh;
+    background-color: var(--main-background);
+  }
+
+  .infos-asides {
+    width: 22.3125rem;
+    height: 33.3125rem;
+    margin: 6.25rem 4.5rem 11.9375rem 6.875rem;
+  }
+
+  .title-product {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.3125rem;
+  }
+
+  .description-product {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-description);
+    margin-bottom: 1.3125rem;
+  }
+
+  .price-product {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.875rem;
+  }
+
+  .button-buy {
+    width: 17.125rem;
+    height: 5.625rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--button);
+    border: none;
+  }
+
+  .product-images {
+    margin-top: 6.25rem;
+    height: 31.857rem;
+  }
+
+  .image-principal-container {
+    width: 25.625rem;
+    height: 21.625rem;
+    margin: 0 auto;
+  }
+
+  .image-principal-container img {
+    width: 100%;}
+
+  .gallery {
+    display: flex;
+  }
+
+  .gallery img {
+    width: 9.5rem;
+    height: 9.5rem;
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .gallery img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .midia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .midia a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .explorer-more {
+    display: flex;
+    align-items: center;
+    height: 10.375rem;
+    background-color: var(--footer);
+  }
+
+  .explorer-more a {
+    color: #ffffff;
+  }
+}
